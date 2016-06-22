@@ -1,0 +1,18 @@
+// in this program, we write a simple C program which give array of a single word string given by the user
+
+#include <stdio.h>
+
+int main (void)
+{
+// declaring s variable with a length of 20 characters
+    char s[21];
+
+//asking for input strings
+    printf("enter a word you want to type:");
+
+//storing input word string as given by user
+    scanf("%s", s);
+
+//printing the strings that given by the user
+    printf("%s", s);
+}
