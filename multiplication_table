@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main (void)
+{
+    int x,i,j; //declaring integer variables x, i and j
+
+     printf ("Type a number till which you want multiplication of:"); //to ask for input integer
+     scanf ("%d", &x); //here %d is for referencing integer x value which we input
+
+    for (i=1; i<=x; i++)
+    {
+        for (j=1; j<=10; j++)
+
+            printf ("%d x %d = %d\n",i,j,i*j);
+
+        printf("\n");
+    }
+}
