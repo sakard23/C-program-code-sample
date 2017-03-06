@@ -1,0 +1,26 @@
+int main (void)
+{
+
+    int array[100], min, size, c, location=1;
+
+    printf("size of array");
+    scanf("%d", &size);
+
+    printf("enter value %d",size);
+    for (c=0;c<size;c++)
+    {
+
+        scanf("%d", &array[c]);
+    }
+    min=array[0];
+    for (c=1; c<size;c++)
+    {
+
+        if (array[c]<min)
+        {
+            min=array[c];
+            location=c+1;
+        }
+    }
+    printf("min is %d at %d location.",min, location);
+}
